@@ -118,10 +118,9 @@ router.get('/p/notice', function (req, res) {
     res.sendFile(path.join(__dirname + '/p_small_project/notice.html'));
 });
 
-router.get('/third', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request 리스트 : ' + req.query.sel + '<br>Request 다중리스트 : ' + req.query.sel_multiple + '<br>Request 라디오버튼 : ' + req.query.radio
-        )
+router.get('/sign_up', function (req, res) {
+    res.send('<br>이름 : ' + req.query.name + '<br>Request 이메일 : ' + req.query.email + '<br>Request 비밀번호 : ' + req.query.password
+       +'<br>Request 비밀번호 : ' + req.query.re_password + '<br>Request 생일 : ' + req.query.birthday)
 });
 router.get('/fourth', function (req, res) {
     console.log(req.query.email);
