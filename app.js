@@ -109,85 +109,9 @@ router.get('/park', function (req, res) {
     res.sendFile(path.join(__dirname + '/view/park/p00.html'));
 });
 router.get('/park/01', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p01.html'));
-});
-router.get('/park/02', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p02.html'));
+    res.sendFile(path.join(__dirname + '/view/park/p_small.html'));
 });
 
-router.get('/park/03', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p03.html'));
-});
-router.get('/park/04', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p04.html'));
-});
-router.get('/park/05', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p05.html'));
-});
-router.get('/park/project00', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/project00.html'));
-});
-router.get('/park/07', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p07.html'));
-});
-router.get('/park/08', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p08.html'));
-});
-router.get('/park/09', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p09.html'));
-});
-router.get('/park/10', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p10_figure.html'));
-});
-router.get('/park/11', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p11_button.html'));
-});
-router.get('/park/12', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p12_collapse.html'));
-});
-router.get('/park/13', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p13_carousel.html'));
-});
-router.get('/park/14', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p14_dropdowns.html'));
-});
-router.get('/park/project01', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/project01.html'));
-});
-router.get('/park/15', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p15_navbar.html'));
-});
-router.get('/park/16', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p16_collapse.html'));
-});
-router.get('/park/17', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p17_formgroup.html'));
-});
-router.get('/detail', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request parameters : ' + req.query.email + '<br>Request 비밀번호 : ' + req.query.pwd + '<br>Request 체크박스 : ' + req.query.vehicle
-        + '<br>Request 라디오 : ' + req.query.optradio + '<br>Request 선택메뉴 : ' + req.query.sel1)
-});
-router.get('/email', function (req, res) {
-    res.send('Request site : ' + req.query.username + '<br>Request Something clever : ' + req.query.something_clever)
-});
-router.get('/park/18', function (req, res) {
-    console.log(req.query.username);
-    res.sendFile(path.join(__dirname + '/view/park/p18_inputgroup.html'));
-});
-router.get('/park/project02', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/project02.html'));
-});
-router.get('/first', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request 이메일 : ' + req.query.email + '<br>Request 비밀번호 : ' + req.query.password + '<br>Request 아이디기억 : ' + req.query.remember
-        )
-});
-router.get('/second', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request 이메일 : ' + req.query.email + '<br>Request 비밀번호 : ' + req.query.password + '<br>Request 정보 : ' + req.query.info
-        )
-});
 router.get('/third', function (req, res) {
     console.log(req.query.email);
     res.send('<br>Request 리스트 : ' + req.query.sel + '<br>Request 다중리스트 : ' + req.query.sel_multiple + '<br>Request 라디오버튼 : ' + req.query.radio
@@ -198,30 +122,7 @@ router.get('/fourth', function (req, res) {
     res.send('<br>Request parameters : ' + req.query.disbled + '<br>Request 비밀번호 : ' + req.query.success + '<br>Request 체크박스 : ' + req.query.warning
         + '<br>Request 라디오 : ' + req.query.error)
 });
-router.get('/park/19', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p19_components.html'));
-});
-router.get('/park/20', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p20_card.html'));
-});
-router.get('/park/21', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p21_card2.html'));
-});
-router.get('/park/22', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p22_card3.html'));
-});
-router.get('/park/23', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p23_card4.html'));
-});
-router.get('/park/24', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p24_modal.html'));
-});
-router.get('/park/23', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p23_card4.html'));
-});
-router.get('/park/23', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p23_card4.html'));
-});
+
 
 
 
