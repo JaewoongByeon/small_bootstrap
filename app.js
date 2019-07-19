@@ -108,8 +108,14 @@ router.get('/byeon/25', function (req, res) {
 router.get('/park', function (req, res) {
     res.sendFile(path.join(__dirname + '/view/park/p00.html'));
 });
-router.get('/park/01', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p_small.html'));
+router.get('/p/index', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/index.html'));
+});
+router.get('/p/sign_up', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/sign_up.html'));
+});
+router.get('/p/notice', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/notice.html'));
 });
 
 router.get('/third', function (req, res) {
