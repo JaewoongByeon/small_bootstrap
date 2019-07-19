@@ -108,20 +108,21 @@ router.get('/byeon/25', function (req, res) {
 router.get('/park', function (req, res) {
     res.sendFile(path.join(__dirname + '/view/park/p00.html'));
 });
-router.get('/park/01', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p_small.html'));
+router.get('/p/index', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/index.html'));
+});
+router.get('/p/sign_up', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/sign_up.html'));
+});
+router.get('/p/notice', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/notice.html'));
 });
 
-router.get('/third', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request 리스트 : ' + req.query.sel + '<br>Request 다중리스트 : ' + req.query.sel_multiple + '<br>Request 라디오버튼 : ' + req.query.radio
-        )
+router.get('/sign_up', function (req, res) {
+    res.send('<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email + '<br>비밀번호 : ' + req.query.password
+       +'<br>비밀번호 확인 : ' + req.query.re_password + '<br>생일 : ' + req.query.birthday)
 });
-router.get('/fourth', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request parameters : ' + req.query.disbled + '<br>Request 비밀번호 : ' + req.query.success + '<br>Request 체크박스 : ' + req.query.warning
-        + '<br>Request 라디오 : ' + req.query.error)
-});
+
 
 
 
