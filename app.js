@@ -119,14 +119,10 @@ router.get('/p/notice', function (req, res) {
 });
 
 router.get('/sign_up', function (req, res) {
-    res.send('<br>이름 : ' + req.query.name + '<br>Request 이메일 : ' + req.query.email + '<br>Request 비밀번호 : ' + req.query.password
-       +'<br>Request 비밀번호 : ' + req.query.re_password + '<br>Request 생일 : ' + req.query.birthday)
+    res.send('<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email + '<br>비밀번호 : ' + req.query.password
+       +'<br>비밀번호 확인 : ' + req.query.re_password + '<br>생일 : ' + req.query.birthday)
 });
-router.get('/fourth', function (req, res) {
-    console.log(req.query.email);
-    res.send('<br>Request parameters : ' + req.query.disbled + '<br>Request 비밀번호 : ' + req.query.success + '<br>Request 체크박스 : ' + req.query.warning
-        + '<br>Request 라디오 : ' + req.query.error)
-});
+
 
 
 
