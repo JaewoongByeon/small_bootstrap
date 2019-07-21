@@ -51,8 +51,65 @@
                 </ul>
             </div>
         </nav>
-        <div class="my-3">
-            <div class="display-4">Sign up</div>
+
+        <div class="display-4 text-center my-5">Sign up</div>
+        <div class="my-5 row justify-content-center">
+            <form action="#">
+
+                <div class="form-group">
+                    <label class="mr-3">First name:</label>
+                    <input type="text" class="mr-3 name=" first_name">
+                    <label class="mr-3">Last name:</label>
+                    <input type="text" name="last_name">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="mr-3">E-mail address:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="mr-3">Birth info:</label>
+                    <input type="date" class="form-control" name="birth_info">
+                </div>
+                <div class="form-group form-inline">
+                    <label class="mr-3">Gender:</label>
+                    <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="my-5">
+                    <div class="form-group form-inline">
+                        <label class="mr-3">Username:</label>
+                        <input type="text" class="form-control col" name="user_name">
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="mr-3">Password:</label>
+                        <input type="password" class="form-control col" name="user_password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <label class="mr-4">I've read all the terms of
+                            service and agree with
+                            that.
+                        </label>
+                        <input type="checkbox" class="form-check-input" name="option1">
+                    </div>
+                    <div class="row">
+                        <label class="mr-4">I'd like to receive emails for news and
+                            advertisements.
+                        </label>
+                        <input type="checkbox" class="form-check-input" name="option2">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-center">Submit
+                    </button>
+            </form>
         </div>
     </div>
 </body>
+
+</html>
