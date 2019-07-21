@@ -109,16 +109,16 @@ router.get('/park', function (req, res) {
     res.sendFile(path.join(__dirname + '/view/park/p00.html'));
 });
 router.get('/p/index', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/index.html'));
+    res.sendFile(path.join(__dirname + '/park/index.html'));
 });
 router.get('/p/sign_up', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/sign_up.html'));
+    res.sendFile(path.join(__dirname + '/park.html'));
 });
 router.get('/p/notice', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/notice.html'));
+    res.sendFile(path.join(__dirname + '/park/notice.html'));
 });
 router.get('/p/write', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/write.html'));
+    res.sendFile(path.join(__dirname + '/park/write.html'));
 });
 
 router.get('/sign_up', function (req, res) {
