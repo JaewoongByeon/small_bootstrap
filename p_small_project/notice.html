@@ -22,16 +22,16 @@
         <div class="blog-header pt-4">
             <div class="row align-items-center justify-content-between">
                 <div class="col-4 d-flex justify-content-start">
-                    <a href="#" class="text-secondary">Subscribe</a>
+                    <a href="#" class="text-secondary text-decoration-none">Subscribe</a>
                 </div>
                 <div class="col-4 d-flex justify-content-center">
-                    <a href="/p/index" class="text-secondary">
-                        <h5 class="display-5 font-weight-bold">반려동물 보호소</h5>
+                    <a href="/p/index" class="text-secondary text-decoration-none">
+                        <h5 class="display-5 font-weight-bold text-decoration-none">반려동물 보호소</h5>
                     </a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <a href="#" class="text-secondary">로그인</a>
-                    <a href="/p/sign_up" class="text-secondary m-2">회원가입</a>
+                    <a href="#" class="text-secondary text-decoration-none">로그인</a>
+                    <a href="/p/sign_up" class="text-secondary m-2 text-decoration-none">회원가입</a>
                 </div>
             </div>
         </div>
@@ -64,8 +64,8 @@
                 </li>
             </ul>
             <ul class="navbar-nav">
-                <li class="/p/notice">
-                    <a href="#" class="nav-link text-dark">Notice</a>
+                <li class="nav-item">
+                    <a href="/p/notice" class="nav-link text-dark">Notice</a>
                 </li>
             </ul>
         </nav>
@@ -73,7 +73,7 @@
         <!--테이블 부분 시작-->
         <div class="row col-12 mt-4 p-3 border border-secondary">
             <table class="table table-light table-sm table-bordered table-striped">
-                <h1 class="font-weight-bold text-warning m-2 pb-2">공지사항</h1>
+                <h1 class="font-weight-bold text-warning m-2 pb-2">게시판</h1>
                 <thead class="thead-light">
                     <tr>
                         <th>번호</th>
@@ -84,10 +84,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th>1</th>
-                        <td>반려동물 등록 방법</td>
-                        <td>박관용</td>
-                        <td>6/10</td>
+                        <a href="" class="">
+                            <th>1</th>
+                            <td>반려동물 등록 방법</td>
+                            <td>박관용</td>
+                            <td>6/10</td>
+                        </a>
                     </tr>
                     <tr>
                         <th>2</th>
@@ -97,7 +99,7 @@
                     </tr>
                     <tr>
                         <th>3</th>
-                        <td>반려동물 불법 입양 사례</td>
+                        <td>반려동물 훈련법</td>
                         <td>박관용</td>
                         <td>7/05</td>
                     </tr>
@@ -144,17 +146,20 @@
                         <td>7/23</td>
                     </tr>
 
-                </tbody>    
+                </tbody>
             </table>
+            <div class="col-12 text-right">
+                <a href="/p/write" class="border border-dark rounded bg-secondary text-white text-decoration-none">글쓰기</a>
+            </div>
             <div class="col-12 text-center">
-                    <a href="#" class="">1</a>
-                    <a href="#" class="">2</a>
-                    <a href="#" class="">3</a>
-                    <a href="#" class="">4</a>
-                    <a href="#" class="">5</a>
-                    <a href="#" class="">6</a>
-                    <a href="#" class="">7</a>
-                </div>
+                <a href="/p/notice" class="">1</a>
+                <a href="/p/notice" class="">2</a>
+                <a href="/p/notice" class="">3</a>
+                <a href="/p/notice" class="">4</a>
+                <a href="/p/notice" class="">5</a>
+                <a href="/p/notice" class="">6</a>
+                <a href="/p/notice" class="">7</a>
+            </div>
         </div>
         <!--테이블 부분 끝-->
     </div>

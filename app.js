@@ -117,10 +117,16 @@ router.get('/p/sign_up', function (req, res) {
 router.get('/p/notice', function (req, res) {
     res.sendFile(path.join(__dirname + '/p_small_project/notice.html'));
 });
+router.get('/p/write', function (req, res) {
+    res.sendFile(path.join(__dirname + '/p_small_project/write.html'));
+});
 
 router.get('/sign_up', function (req, res) {
     res.send('<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email + '<br>비밀번호 : ' + req.query.password
        +'<br>비밀번호 확인 : ' + req.query.re_password + '<br>생일 : ' + req.query.birthday)
+});
+router.get('/notice_board', function (req, res) {
+    res.send('<br>제목 : ' + req.query.title + '<br>작성자 : ' + req.query.writer + '<br>내용 : ' + req.query.content)
 });
 
 
