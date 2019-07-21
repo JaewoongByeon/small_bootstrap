@@ -29,24 +29,35 @@
             </button>
 
             <!--brand name inside navbar-->
-            <a class="navbar-brand mr-3" href="./Byeolchan/views/main.html">Home</a>
+            <a class="navbar-brand mr-3" href="/Byeolchan">Home</a>
 
             <div class="collapse navbar-collapse row justify-content-between" id="collapsibleNavbar">
                 <ul class="navbar-nav">
+                    <!--Category
                     <li>
-                        <a class="nav-item mx-3 text-white text-decoration-none" href="#">Category</a>
+                        <a class="nav-item mx-3 text-white text-decoration-none" href="/Byeolchan/">Category</a>
+                    </li>-->
+                    <li>
+                        <a class="nav-item mx-3 text-white text-decoration-none" href="/Byeolchan/notice">Notice </a>
                     </li>
+                    <!--
                     <li>
-                        <a class="nav-item mx-3 text-white text-decoration-none"
-                            href="./Byeolchan/views/notice.html">Notice </a> </li>
-                    <li>
-                        <a class="nav-item mx-3 text-white text-decoration-none" href="#">Boards</a>
+                        <a class="nav-item mx-3 text-white text-decoration-none" href="/Byeolchan/notice">Boards</a>
                     </li>
+                    -->
+                    <!--FAQ and Contact Info
+                    <li>
                     <a class="nav-item mx-3 text-white text-decoration-none" href="#">FAQ</a>
+                    </li>
+                    <li>
                     <a class="nav-item mx-3 text-white text-decoration-none" href="#">Contact us</a>
+                    </li>
+                    -->
                 </ul>
                 <ul class="navbar-nav">
-                    <a class="nav-item mx-3 text-white text-decoration-none" href="./Byeolchan/views/sign_up.html">Sign
+                    <a class="nav-item mx-3 text-white text-decoration-none" href="./Byeolchan/logout">log
+                        out</a>
+                    <a class="nav-item mx-3 text-white text-decoration-none" href="./Byeolchan/sign_up">Sign
                         up</a>
                     <a class="nav-item mx-3 text-white text-decoration-none" href="#">Sign in</a>
                 </ul>
@@ -71,7 +82,7 @@
             <div class="card my-5">
                 <div class="row no-gutters">
                     <div class="col-md-6 col-sm-12">
-                        <img src="../public/Lighthouse.jpg" class="card-img" alt="Lighthouse" height="100%">
+                        <img src="/Byeolchan/public/Lighthouse.jpg" class="card-img" alt="Lighthouse" height="100%">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <div class="card-body">
@@ -109,43 +120,12 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <img src="../public/6.jpg" class="card-img" alt="6" height="100%">
+                        <img src="/Byeolchan/public/6.jpg" class="card-img" alt="6" height="100%">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="my-5">
-            <div class="display-4 font-weight-bold text-center m-5">Log-in</div>
-            <form action="/">
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <span class="fas fa-user"></span>
-                                </div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" name="username">
-                        </div>
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <span class="fas fa-lock"></span>
-                                </div>
-                            </div>
-                            <input type="password" class="form-control" placeholder="Password" name="">
-                        </div>
-                    </div>
-                    <div class="col-3 p-0">
-                        <button type="submit" class="btn btn-primary p-4 ">Go</button>
-                    </div>
-                </div>
-                <div class="justify-content-left">
-                    Create a new count, forgot my account
-                </div>
-            </form>
-        </div>
 
 
 
