@@ -13,95 +13,18 @@ router.get('/', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/byeon', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b00.html'));
+router.get('/b', function (req, res) {
+    res.sendFile(path.join(__dirname + '/byeon/index.html'));
 });
-router.get('/byeon/01', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b01.html'));
+router.get('/b/signup', function (req, res) {
+    res.sendFile(path.join(__dirname + '/byeon/signup.html'));
 });
-router.get('/byeon/02', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b02.html'));
+router.get('/b/notice', function (req, res) {
+    res.sendFile(path.join(__dirname + '/byeon/notice.html'));
 });
-router.get('/byeon/03', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b03.html'));
-});
-router.get('/byeon/04', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b04.html'));
-});
-router.get('/byeon/05', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b05.html'));
-});
-router.get('/byeon/06', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b06.html'));
-});
-router.get('/byeon/07', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b07.html'));
-});
-router.get('/byeon/08', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b08.html'));
-});
-router.get('/byeon/09', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b09.html'));
-});
-router.get('/byeon/10', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b10.html'));
-});
-router.get('/byeon/11', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b11.html'));
-});
-router.get('/byeon/12', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b12.html'));
-});
-router.get('/byeon/13', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b13.html'));
-});
-router.get('/byeon/14', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b14.html'));
-});
-router.get('/byeon/15', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b15.html'));
-});
-router.get('/byeon/16', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b16.html'));
-});
-router.get('/byeon/17', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b17.html'));
-});
-router.get('/byeon/18', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b18.html'));
-});
-router.get('/byeon/18/go', function (req, res) {
-    console.log(req.query);
-    res.send('요청된 파라미터<br>이메일: ' + req.query.email + '<br>체크박스 1: ' + req.query.check1 + '<br>체크박스 2: ' + req.query.check2 + '<br>라디오버튼: ' + req.query.radio + '<br>선택: ' + req.query.select)
-});
-router.get('/byeon/19', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b19.html'));
-});
-router.get('/byeon/19/go', function (req, res) {
-    console.log(req.query);
-    res.send('Request parameters : ' + req.query.email)
-});
-router.get('/byeon/20', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b20.html'));
-});
-router.get('/byeon/20/submit', function (req, res) {
-    console.log(req.query);
-    res.send('Request parameters<br>Email 1: ' + req.query.email1 + '<br>Password 1: ' + req.query.pwd1 + '<br>Remeber me: ' + req.query.rem + '<br>Select list: ' + req.query.select + '<br>Multiple select list: ' + req.query.multiple + '<br>Option: ' + req.query.option + '<br>Remeber me: ' + req.query.rem + '<br>Select list: ' + req.query.select)
-});
-router.get('/byeon/21', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b21.html'));
-});
-router.get('/byeon/22', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b22.html'));
-});
-router.get('/byeon/23', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b23.html'));
-});
-router.get('/byeon/24', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b24.html'));
-});
-router.get('/byeon/25', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/byeon/b25.html'));
+router.get('/b/submit', function (req, res) {
+    res.send('<br>first name : ' + req.query.firstname + '<br>surname : ' + req.query.surname + '<br>e-mail : ' + req.query.email + '<br>password : ' + req.query.pwd
+       +'<br>password confirm : ' + req.query.pwdcf + '<br>phone : ' + req.query.tel + '<br>month : ' + req.query.month + '<br>date : ' + req.query.date + '<br>year : ' + req.query.year + '<br>gender : ' + req.query.gender + '<br>agree send mail : ' + req.query.agree)
 });
 
 
