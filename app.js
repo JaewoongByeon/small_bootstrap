@@ -27,7 +27,7 @@ router.get('/b/submit', function (req, res) {
        +'<br>password confirm : ' + req.query.pwdcf + '<br>phone : ' + req.query.tel + '<br>month : ' + req.query.month + '<br>date : ' + req.query.date + '<br>year : ' + req.query.year + '<br>gender : ' + req.query.gender + '<br>agree send mail : ' + req.query.agree)
 });
 
-
+/////////////////////park///////////////////////////
 router.get('/park', function(req, res) {
   res.sendFile(path.join(__dirname + '/view/park/p00.html'));
 });
@@ -43,7 +43,7 @@ router.get('/p/notice', function(req, res) {
 router.get('/p/write', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/write.html'));
 });
-
+//////////////////////////////////////////////////
 // Byeolchan -->
 router.get('/Byeolchan', function(req, res) {
   res.sendFile(path.join(__dirname + '/Byeolchan/views/main.html'));
