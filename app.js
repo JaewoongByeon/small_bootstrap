@@ -32,6 +32,12 @@ router.get('/b/submit', function (req, res) {
 router.get('/p/intro', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/01_intro.html'));
 });
+router.get('/p/script', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/02_script.html'));
+});
+router.get('/p/output_display', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/03_output_display.html'));
+});
 router.get('/p/index', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/index.html'));
 });
