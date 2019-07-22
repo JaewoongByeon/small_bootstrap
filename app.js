@@ -121,7 +121,7 @@ router.get('/p/index', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/index.html'));
 });
 router.get('/p/sign_up', function(req, res) {
-  res.sendFile(path.join(__dirname + '/park.html'));
+  res.sendFile(path.join(__dirname + '/park/sign_up.html'));
 });
 router.get('/p/notice', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/notice.html'));
