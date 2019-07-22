@@ -29,7 +29,7 @@ router.get('/b/submit', function (req, res) {
 
 /////////////////////park///////////////////////////
 router.get('/park', function(req, res) {
-  res.sendFile(path.join(__dirname + '/view/park/p00.html'));
+  res.sendFile(path.join(__dirname + '/park/01_intro.html'));
 });
 router.get('/p/index', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/index.html'));
