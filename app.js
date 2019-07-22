@@ -28,7 +28,7 @@ router.get('/b/submit', function (req, res) {
 });
 
 /////////////////////park///////////////////////////
-router.get('/park', function(req, res) {
+router.get('/p/intro', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/01_intro.html'));
 });
 router.get('/p/index', function(req, res) {
