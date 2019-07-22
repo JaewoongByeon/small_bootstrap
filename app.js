@@ -74,12 +74,12 @@ router.get('/park/sign_up', function(req, res) {
   res.send(
       '<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email +
       '<br>비밀번호 : ' + req.query.password + '<br>비밀번호 확인 : ' +
-      req.query.re_password + '<br>생일 : ' + req.query.birthday)
+      req.query.re_password + '<br>생일 : ' + req.query.birthday + "<p><a href=\"/p/index\">Go to Main Page</a></p>")
 });
 router.get('/park/notice_board', function(req, res) {
   res.send(
       '<br>제목 : ' + req.query.title + '<br>작성자 : ' + req.query.writer +
-      '<br>내용 : ' + req.query.content)
+      '<br>내용 : ' + req.query.content + "<p><a href=\"/p/index\">Go to Main Page</a></p>")
 });
 
 
