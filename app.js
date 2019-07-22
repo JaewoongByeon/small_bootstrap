@@ -27,9 +27,9 @@ router.get('/b/submit', function (req, res) {
        +'<br>password confirm : ' + req.query.pwdcf + '<br>phone : ' + req.query.tel + '<br>month : ' + req.query.month + '<br>date : ' + req.query.date + '<br>year : ' + req.query.year + '<br>gender : ' + req.query.gender + '<br>agree send mail : ' + req.query.agree)
 });
 
-
-router.get('/park', function(req, res) {
-  res.sendFile(path.join(__dirname + '/view/park/p00.html'));
+/////////////////////park///////////////////////////
+router.get('/p/intro', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/01_intro.html'));
 });
 router.get('/p/index', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/index.html'));
@@ -43,7 +43,7 @@ router.get('/p/notice', function(req, res) {
 router.get('/p/write', function(req, res) {
   res.sendFile(path.join(__dirname + '/park/write.html'));
 });
-
+//////////////////////////////////////////////////
 // Byeolchan -->
 router.get('/Byeolchan', function(req, res) {
   res.sendFile(path.join(__dirname + '/Byeolchan/views/main.html'));
@@ -74,12 +74,12 @@ router.get('/park/sign_up', function(req, res) {
   res.send(
       '<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email +
       '<br>비밀번호 : ' + req.query.password + '<br>비밀번호 확인 : ' +
-      req.query.re_password + '<br>생일 : ' + req.query.birthday)
+      req.query.re_password + '<br>생일 : ' + req.query.birthday + "<p><a href=\"/p/index\">Go to Main Page</a></p>")
 });
 router.get('/park/notice_board', function(req, res) {
   res.send(
       '<br>제목 : ' + req.query.title + '<br>작성자 : ' + req.query.writer +
-      '<br>내용 : ' + req.query.content)
+      '<br>내용 : ' + req.query.content + "<p><a href=\"/p/index\">Go to Main Page</a></p>")
 });
 
 
