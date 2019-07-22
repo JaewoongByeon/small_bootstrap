@@ -2,15 +2,15 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-//app.get('/', (req, res) => res.send('Hello World!'))
+// app.get('/', (req, res) => res.send('Hello World!'))
 
 app.use(express.static('public'))
 
 const path = require('path');
 const router = express.Router();
-router.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
-    //__dirname : It will resolve to your project folder.
+router.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/index.html'));
+  //__dirname : It will resolve to your project folder.
 });
 
 router.get('/b', function (req, res) {
@@ -28,25 +28,59 @@ router.get('/b/submit', function (req, res) {
 });
 
 
-router.get('/park', function (req, res) {
-    res.sendFile(path.join(__dirname + '/view/park/p00.html'));
+router.get('/park', function(req, res) {
+  res.sendFile(path.join(__dirname + '/view/park/p00.html'));
 });
-router.get('/p/index', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/index.html'));
+router.get('/p/index', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/index.html'));
 });
-router.get('/p/sign_up', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/sign_up.html'));
+router.get('/p/sign_up', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/sign_up.html'));
 });
-router.get('/p/notice', function (req, res) {
-    res.sendFile(path.join(__dirname + '/p_small_project/notice.html'));
+router.get('/p/notice', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/notice.html'));
 });
-
-router.get('/sign_up', function (req, res) {
-    res.send('<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email + '<br>비밀번호 : ' + req.query.password
-       +'<br>비밀번호 확인 : ' + req.query.re_password + '<br>생일 : ' + req.query.birthday)
+router.get('/p/write', function(req, res) {
+  res.sendFile(path.join(__dirname + '/park/write.html'));
 });
 
+// Byeolchan -->
+router.get('/Byeolchan', function(req, res) {
+  res.sendFile(path.join(__dirname + '/Byeolchan/views/main.html'));
+});
 
+router.get('/Byeolchan/logout', function(req, res) {
+  res.sendFile(path.join(__dirname + '/Byeolchan/views/logout.html'));
+});
+
+router.get('/Byeolchan/notice_detail', function(req, res) {
+  res.sendFile(path.join(__dirname + '/Byeolchan/views/notice_detail.html'));
+});
+
+router.get('/Byeolchan/sign_up', function(req, res) {
+  res.sendFile(path.join(__dirname + '/Byeolchan/views/sign_up.html'));
+});
+
+router.get('/Byeolchan/notice', function(req, res) {
+  res.sendFile(path.join(__dirname + '/Byeolchan/views/notice.html'));
+});
+
+router.get('/Byeolchan/sign_in', function(req, res) {
+  res.sendFile(path.join(__dirname + '/Byeolchan/views/sign_in.html'));
+});
+// <--Byeolchan
+
+router.get('/park/sign_up', function(req, res) {
+  res.send(
+      '<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email +
+      '<br>비밀번호 : ' + req.query.password + '<br>비밀번호 확인 : ' +
+      req.query.re_password + '<br>생일 : ' + req.query.birthday)
+});
+router.get('/park/notice_board', function(req, res) {
+  res.send(
+      '<br>제목 : ' + req.query.title + '<br>작성자 : ' + req.query.writer +
+      '<br>내용 : ' + req.query.content)
+});
 
 
 
