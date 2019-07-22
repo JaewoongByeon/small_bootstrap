@@ -156,7 +156,7 @@ router.get('/Byeolchan/sign_in', function(req, res) {
 });
 // <--Byeolchan
 
-router.get('/sign_up', function(req, res) {
+router.get('/park/sign_up', function(req, res) {
   res.send(
       '<br>이름 : ' + req.query.name + '<br>이메일 : ' + req.query.email +
       '<br>비밀번호 : ' + req.query.password + '<br>비밀번호 확인 : ' +
